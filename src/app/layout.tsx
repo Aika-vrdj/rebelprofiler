@@ -5,8 +5,8 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Enneagram Hub",
-  description: "Explore and understand the nine Enneagram personality types",
+  title: "My Rebel Mind",
+  description: "Unleash your inner rebel and explore the nine revolutionary archetypes",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
@@ -14,8 +14,10 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable} dark`}>
-      <body>{children}</body>
+    <html lang="en" className={`${GeistSans.variable} dark bg-black text-gray-200`}>
+      <body className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+        {children}
+      </body>
     </html>
   );
 }
