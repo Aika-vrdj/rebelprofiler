@@ -48,12 +48,12 @@ const typeData: { [key: number]: TypeData } = {
     traits: ["Principled and purposeful", "Self-controlled and perfectionistic", "Rational and idealistic", "Organized and orderly", "Critical (of self and others)"],
     wings: {
       "1w9": {
-        name: "The Vanguard",
+        name: "Type 1 wing 9 - The Vanguard",
         traits: ["More introverted", "Calmer", "Less confrontational", "More philosophical"],
         description: "Combines One's perfectionism with Nine's desire for peace and harmony. The steadfast visionary, leading with unyielding ideals, bridging the gap between peace and action."
       },
       "1w2": {
-        name: "The Justicar",
+        name: "Type 1 wing 2 - The Justicar",
         traits: ["More extroverted", "People-oriented", "More emotional", "Service-focused"],
         description: "Combines One's idealism with Two's desire to help others. The enforcer of justice and protector of the cause, standing firm in the face of moral conflict."
       }
@@ -95,12 +95,12 @@ const typeData: { [key: number]: TypeData } = {
     traits: ["Caring and interpersonal", "Empathetic and sincere", "People-pleasing and possessive", "Generous and self-sacrificing", "Pride in helping others"],
     wings: {
       "2w1": {
-        name: "The Benevolent",
+        name: "Type 2 wing 1 - The Benevolent",
         traits: ["More organized", "Principled", "Dutiful", "Service-oriented"],
         description: "Combines Two's caring nature with One's sense of duty and ethics. The selfless protector, driven by an unwavering sense of duty and compassion to serve the rebellion’s needs."
       },
       "2w3": {
-        name: "The Emissary",
+        name: "Type 2 wing 3 - The Emissary",
         traits: ["More outgoing", "Image-conscious", "Ambitious", "Charming"],
         description: "Combines Two's helpfulness with Three's charm and social adaptability.The charismatic diplomat who fosters relationships and alliances, skilled in the art of persuasion."
       }
@@ -142,12 +142,12 @@ const typeData: { [key: number]: TypeData } = {
     traits: ["Ambitious and driven", "Image-conscious and adaptable", "Efficient and goal-oriented", "Competitive and status-seeking", "Self-promoting and charming"],
     wings: {
       "3w2": {
-        name: "The Enchanter",
+        name: "Type 3 wing 2 - The Enchanter",
         traits: ["More people-oriented", "Helpful", "Diplomatic", "Engaging"],
         description: "Combines Three's ambition with Two's desire to be liked and helpful. The charming and commanding presence who wins hearts, while maintaining an aura of authority and leadership."
       },
       "3w4": {
-        name: "The Ace",
+        name: "Type 3 wing 4 - The Ace",
         traits: ["More introspective", "Creative", "Distinguished", "Refined"],
         description: "Combines Three's drive for success with Four's creativity and authenticity. The ambitious and polished strategist, skilled in both the art of success and cultivating a strong personal identity."
       }
@@ -189,12 +189,12 @@ const typeData: { [key: number]: TypeData } = {
     traits: ["Introspective and sensitive", "Creative and expressive", "Melancholic and dramatic", "Self-aware and authentic", "Emotional depth and intensity"],
     wings: {
       "4w3": {
-        name: "The Patrician",
+        name: "Type 4 wing 3 - The Patrician",
         traits: ["More ambitious", "Image-conscious", "Success-oriented", "Competitive"],
         description: "Combines Four's creativity with Three's drive for achievement and recognition. The elegant and influential figure, blending artistic vision with the power and poise of a noble leader."
       },
       "4w5": {
-        name: "The Mystagogue",
+        name: "Type 2 wing 5 - The Mystagogue",
         traits: ["More introspective", "Intellectual", "Reserved", "Philosophical"],
         description: "Combines Four's emotional depth with Five's analytical nature and wisdom. The eccentric and introspective visionary, seeking deeper meaning in a world that often misunderstands them."
       }
@@ -236,12 +236,12 @@ const typeData: { [key: number]: TypeData } = {
     traits: ["Analytical and perceptive", "Private and detached", "Intellectual and innovative", "Conservation of resources", "Minimalist and autonomous"],
     wings: {
       "5w4": {
-        name: "The Strategos",
+        name: "Type 5 wing 4 - The Strategos",
         traits: ["More creative", "Emotionally aware", "Artistic", "Unconventional"],
         description: "Combines Five's intellect with Four's creativity and emotional depth. The meticulous and tactical mind, always seeking solutions to complex problems with unparalleled precision."
       },
       "5w6": {
-        name: "The Protector",
+        name: "Type 5 wing 6 - The Protector",
         traits: ["More practical", "Security-oriented", "Systematic", "Loyal"],
         description: "Combines Five's knowledge-seeking with Six's need for security and structure. The ever-watchful protector, standing strong as the defense of the rebellion’s core values and mission."
       }
@@ -283,12 +283,12 @@ const typeData: { [key: number]: TypeData } = {
     traits: ["Loyal and committed", "Anxious and vigilant", "Questioning and doubting", "Responsible and dutiful", "Security-seeking and cautious"],
     wings: {
       "6w5": {
-        name: "The Guardian",
+        name: "Type 6 wing 5 - The Guardian",
         traits: ["More analytical", "Reserved", "Intellectual", "Systematic"],
         description: "Combines Six's loyalty with Five's analytical nature and objectivity. The ever-watchful protector, standing strong as the defense of the rebellion’s core values and mission."
       },
       "6w7": {
-        name: "The Shieldbearer",
+        name: "Type 6 wing 7 - The Shieldbearer",
         traits: ["More optimistic", "Sociable", "Adventurous", "Engaging"],
         description: "Combines Six's commitment with Seven's enthusiasm and positivity. The loyal companion, offering support and protection, ensuring the survival of the group through unity and strength."
       }
@@ -330,12 +330,12 @@ const typeData: { [key: number]: TypeData } = {
     traits: ["Enthusiastic and optimistic", "Versatile and spontaneous", "Scattered and distractible", "Adventure-seeking and pleasure-oriented", "Future-focused and planning"],
     wings: {
       "7w6": {
-        name: "The Entertainer",
+        name: "Type 7 wing 6 - The Entertainer",
         traits: ["More responsible", "People-oriented", "Loyal", "Engaging"],
         description: "Combines Seven's enthusiasm with Six's commitment and connection to others. The lively spirit who keeps morale high, yet always vigilant and ready to defend the cause when needed."
       },
       "7w8": {
-        name: "The Warden",
+        name: "Type 7 wing 8 - The Warden",
         traits: ["More assertive", "Goal-oriented", "Independent", "Practical"],
         description: "Combines Seven's versatility with Eight's strength and decisiveness. The practical and driven force, balancing pragmatism with strength, ensuring the rebellion’s strategic advancement."
       }
@@ -377,12 +377,12 @@ const typeData: { [key: number]: TypeData } = {
     traits: ["Assertive and direct", "Protective and commanding", "Self-confident and decisive", "Confrontational and justice-oriented", "Control-seeking and independent"],
     wings: {
       "8w7": {
-        name: "The Berserker",
+        name: "Type 8 wing 7 - The Berserker",
         traits: ["More adventurous", "Fun-loving", "Energetic", "Rebellious"],
         description: "Combines Eight's strength with Seven's enthusiasm and adventurousness. The fierce and unrestrained warrior, acting with wild independence while striking fear into their enemies."
       },
       "8w9": {
-        name: "The Bear",
+        name: "Type 8 wing 9 - The Bear",
         traits: ["More diplomatic", "Calm", "Patient", "Reserved"],
         description: "Combines Eight's power with Nine's desire for peace and harmony. The immovable and indomitable force, bringing strength and calm in equal measure to the heart of the rebellion."
       }
@@ -424,12 +424,12 @@ const typeData: { [key: number]: TypeData } = {
     traits: ["Peaceful and accommodating", "Harmonizing and mediating", "Comfortable and steady", "Conflict-avoidant and stubborn", "Self-forgetting and merging"],
     wings: {
       "9w8": {
-        name: "The Tower",
+        name: "Type 9 wing 8 - The Tower",
         traits: ["More assertive", "Independent", "Physical", "Grounded"],
         description: "Combines Nine's peace-seeking with Eight's strength and independence. The stabilizing force of the rebellion, offering peace and security to those around them while exuding quiet power."
       },
       "9w1": {
-        name: "The Oracle",
+        name: "Type 9 wing 1 - The Oracle",
         traits: ["More idealistic", "Principled", "Orderly", "Perfectionist"],
         description: "Combines Nine's acceptance with One's idealism and sense of purpose. The peaceful idealist, envisioning a better world with a quiet yet potent drive for change and justice."
       }
