@@ -44,18 +44,18 @@ interface TypeData {
 const typeData: { [key: number]: TypeData } = {
   1: {
     name: "The Crusader",
-    summary: "Ethical, dedicated and self-controlled, seeking to improve themselves and their world.",
+    summary: "Ethical, dedicated and reliable, Ones are motivated by a desire to live the right way, improve the world, and avoid fault and blame.",
     traits: ["Principled", "Purposeful", "Self-Controlled", "Perfectionistic"],
     wings: {
       "1w9": {
         name: "The Vanguard",
         traits: ["More introverted", "Calmer", "Less confrontational", "More philosophical"],
-        description: "Combines One's perfectionism with Nine's desire for peace and harmony."
+        description: "Combines One's perfectionism with Nine's desire for peace and harmony. The steadfast visionary, leading with unyielding ideals, bridging the gap between peace and action."
       },
       "1w2": {
         name: "The Justicar",
         traits: ["More extroverted", "People-oriented", "More emotional", "Service-focused"],
-        description: "Combines One's idealism with Two's desire to help others."
+        description: "Combines One's idealism with Two's desire to help others. The enforcer of justice and protector of the cause, standing firm in the face of moral conflict."
       }
     },
     integration: "Moves to Type 7 in growth",
@@ -91,18 +91,18 @@ const typeData: { [key: number]: TypeData } = {
   },
   2: {
     name: "The Guardian",
-    summary: "Empathetic, sincere and warm-hearted, they are motivated by a need to be loved and needed.",
+    summary: "Warm, caring, and giving, Twos are motivated by a need to be loved and needed, and to avoid acknowledging their own needs.",
     traits: ["Caring", "Generous", "Empathetic", "People-Pleasing"],
     wings: {
       "2w1": {
         name: "The Benevolent",
         traits: ["More organized", "Principled", "Dutiful", "Service-oriented"],
-        description: "Combines Two's caring nature with One's sense of duty and ethics."
+        description: "Combines Two's caring nature with One's sense of duty and ethics. The selfless protector, driven by an unwavering sense of duty and compassion to serve the rebellion’s needs."
       },
       "2w3": {
         name: "The Emissary",
         traits: ["More outgoing", "Image-conscious", "Ambitious", "Charming"],
-        description: "Combines Two's helpfulness with Three's charm and social adaptability."
+        description: "Combines Two's helpfulness with Three's charm and social adaptability.The charismatic diplomat who fosters relationships and alliances, skilled in the art of persuasion."
       }
     },
     integration: "Moves to Type 4 in growth",
@@ -138,18 +138,18 @@ const typeData: { [key: number]: TypeData } = {
   },
   3: {
     name: "The Trailblazer",
-    summary: "Ambitious, adaptable and success-oriented, driven by a need to be admired and to achieve success.",
+    summary: "Success-oriented, pragmatic, and adaptable, Threes are motivated by a need to be successful, to distinguish themselves from others, and to avoid failure.",
     traits: ["Ambitious", "Efficient", "Image-conscious", "Adaptable"],
     wings: {
       "3w2": {
         name: "The Enchanter",
         traits: ["More people-oriented", "Helpful", "Diplomatic", "Engaging"],
-        description: "Combines Three's ambition with Two's desire to be liked and helpful."
+        description: "Combines Three's ambition with Two's desire to be liked and helpful. The charming and commanding presence who wins hearts, while maintaining an aura of authority and leadership."
       },
       "3w4": {
         name: "The Ace",
         traits: ["More introspective", "Creative", "Distinguished", "Refined"],
-        description: "Combines Three's drive for success with Four's creativity and authenticity."
+        description: "Combines Three's drive for success with Four's creativity and authenticity. The ambitious and polished strategist, skilled in both the art of success and cultivating a strong personal identity."
       }
     },
     integration: "Moves to Type 6 in growth",
@@ -185,18 +185,18 @@ const typeData: { [key: number]: TypeData } = {
   },
   4: {
     name: "The Visionary",
-    summary: "Creative, sensitive, and expressive, driven by a need to be unique and find meaning in life.",
+    summary: "Sensitive, introspective, and expressive, Fours are motivated by a need to be authentic, special and to avoid being ordinary or mundane.",
     traits: ["Authentic", "Creative", "Sensitive", "Expressive"],
     wings: {
       "4w3": {
         name: "The Patrician",
         traits: ["More ambitious", "Image-conscious", "Success-oriented", "Competitive"],
-        description: "Combines Four's creativity with Three's drive for achievement and recognition."
+        description: "Combines Four's creativity with Three's drive for achievement and recognition. The elegant and influential figure, blending artistic vision with the power and poise of a noble leader."
       },
       "4w5": {
         name: "The Mystagogue",
         traits: ["More introspective", "Intellectual", "Reserved", "Philosophical"],
-        description: "Combines Four's emotional depth with Five's analytical nature and wisdom."
+        description: "Combines Four's emotional depth with Five's analytical nature and wisdom. The eccentric and introspective visionary, seeking deeper meaning in a world that often misunderstands them."
       }
     },
     integration: "Moves to Type 1 in growth",
@@ -232,18 +232,18 @@ const typeData: { [key: number]: TypeData } = {
   },
   5: {
     name: "The Strategist",
-    summary: "Perceptive, innovative, and private, driven by a need to understand and master the world around them.",
+    summary: "Perceptive, innovative, and isolated, Fives are motivated by a need to gain knowledge, conserve energy, and avoid relying on others.",
     traits: ["Analytical", "Perceptive", "Private", "Innovative"],
     wings: {
       "5w4": {
         name: "The Strategos",
         traits: ["More creative", "Emotionally aware", "Artistic", "Unconventional"],
-        description: "Combines Five's intellect with Four's creativity and emotional depth."
+        description: "Combines Five's intellect with Four's creativity and emotional depth. The meticulous and tactical mind, always seeking solutions to complex problems with unparalleled precision."
       },
       "5w6": {
         name: "The Protector",
         traits: ["More practical", "Security-oriented", "Systematic", "Loyal"],
-        description: "Combines Five's knowledge-seeking with Six's need for security and structure."
+        description: "Combines Five's knowledge-seeking with Six's need for security and structure. The ever-watchful protector, standing strong as the defense of the rebellion’s core values and mission."
       }
     },
     integration: "Moves to Type 8 in growth",
@@ -279,18 +279,18 @@ const typeData: { [key: number]: TypeData } = {
   },
   6: {
     name: "The Sentinel",
-    summary: "Committed, security-oriented, and engaging, driven by the need for security and support.",
+    summary: "Committed, security-oriented, and engaging, Sixes are motivated by a need for security, guidance, and to avoid danger.",
     traits: ["Loyal", "Responsible", "Security-focused", "Vigilant"],
     wings: {
       "6w5": {
         name: "The Guardian",
         traits: ["More analytical", "Reserved", "Intellectual", "Systematic"],
-        description: "Combines Six's loyalty with Five's analytical nature and objectivity."
+        description: "Combines Six's loyalty with Five's analytical nature and objectivity. The ever-watchful protector, standing strong as the defense of the rebellion’s core values and mission."
       },
       "6w7": {
         name: "The Shieldbearer",
         traits: ["More optimistic", "Sociable", "Adventurous", "Engaging"],
-        description: "Combines Six's commitment with Seven's enthusiasm and positivity."
+        description: "Combines Six's commitment with Seven's enthusiasm and positivity. The loyal companion, offering support and protection, ensuring the survival of the group through unity and strength."
       }
     },
     integration: "Moves to Type 9 in growth",
@@ -326,18 +326,18 @@ const typeData: { [key: number]: TypeData } = {
   },
   7: {
     name: "The Maverick",
-    summary: "Spontaneous, versatile, and adventurous, driven by a need to experience life's pleasures and avoid pain.",
+    summary: "Busy, fun-loving, and spontaneous, Sevens are motivated by a need to be happy, to plan stimulating experiences, and to avoid pain.",
     traits: ["Optimistic", "Adventurous", "Versatile", "Spontaneous"],
     wings: {
       "7w6": {
         name: "The Entertainer",
         traits: ["More responsible", "People-oriented", "Loyal", "Engaging"],
-        description: "Combines Seven's enthusiasm with Six's commitment and connection to others."
+        description: "Combines Seven's enthusiasm with Six's commitment and connection to others. The lively spirit who keeps morale high, yet always vigilant and ready to defend the cause when needed."
       },
       "7w8": {
         name: "The Warden",
         traits: ["More assertive", "Goal-oriented", "Independent", "Practical"],
-        description: "Combines Seven's versatility with Eight's strength and decisiveness."
+        description: "Combines Seven's versatility with Eight's strength and decisiveness. The practical and driven force, balancing pragmatism with strength, ensuring the rebellion’s strategic advancement."
       }
     },
     integration: "Moves to Type 5 in growth",
@@ -373,18 +373,18 @@ const typeData: { [key: number]: TypeData } = {
   },
   8: {
     name: "The Warlord",
-    summary: "Powerful, dominating, and self-confident, driven by a need to be strong and avoid vulnerability.",
+    summary: "Powerful, dominating, and self-confident, Eights are motivated by a need to be strong, to maintain control over their environment, and to avoid vulnerability.",
     traits: ["Strong-willed", "Decisive", "Protective", "Confrontational"],
     wings: {
       "8w7": {
         name: "The Berserker",
         traits: ["More adventurous", "Fun-loving", "Energetic", "Rebellious"],
-        description: "Combines Eight's strength with Seven's enthusiasm and adventurousness."
+        description: "Combines Eight's strength with Seven's enthusiasm and adventurousness. The fierce and unrestrained warrior, acting with wild independence while striking fear into their enemies."
       },
       "8w9": {
         name: "The Bear",
         traits: ["More diplomatic", "Calm", "Patient", "Reserved"],
-        description: "Combines Eight's power with Nine's desire for peace and harmony."
+        description: "Combines Eight's power with Nine's desire for peace and harmony. The immovable and indomitable force, bringing strength and calm in equal measure to the heart of the rebellion."
       }
     },
     integration: "Moves to Type 2 in growth",
@@ -420,18 +420,18 @@ const typeData: { [key: number]: TypeData } = {
   },
   9: {
     name: "The Diplomat",
-    summary: "Accepting, trusting, and stable, driven by a need to maintain peace and avoid conflict.",
+    summary: "Easygoing, self-effacing, and receptive, Nines are motivated by a need to keep the peace, merge with others, and avoid conflict.",
     traits: ["Patient", "Receptive", "Harmonious", "Agreeable"],
     wings: {
       "9w8": {
-        name: "The Pillar",
+        name: "The Tower",
         traits: ["More assertive", "Independent", "Physical", "Grounded"],
-        description: "Combines Nine's peace-seeking with Eight's strength and independence."
+        description: "Combines Nine's peace-seeking with Eight's strength and independence. The stabilizing force of the rebellion, offering peace and security to those around them while exuding quiet power."
       },
       "9w1": {
         name: "The Oracle",
         traits: ["More idealistic", "Principled", "Orderly", "Perfectionist"],
-        description: "Combines Nine's acceptance with One's idealism and sense of purpose."
+        description: "Combines Nine's acceptance with One's idealism and sense of purpose. The peaceful idealist, envisioning a better world with a quiet yet potent drive for change and justice."
       }
     },
     integration: "Moves to Type 3 in growth",
