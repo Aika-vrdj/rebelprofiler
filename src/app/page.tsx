@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
+// List of enneagram types with corresponding colors
 const enneagramTypes = [
   { number: 1, name: "The Crusader", color: "bg-[#3A3A3A]" },
   { number: 2, name: "The Guardian", color: "bg-[#8B0000]" },
@@ -15,6 +16,19 @@ const enneagramTypes = [
   { number: 8, name: "The Warlord", color: "bg-[#333333]" },
   { number: 9, name: "The Diplomat", color: "bg-[#444444]" },
 ];
+
+// Descriptions for each personality type
+const personalityDescriptions = {
+  "The Crusader": "The moral warrior who fights for justice and structure.",
+  "The Guardian": "The protector who uplifts others in the fight.",
+  "The Trailblazer": "The charismatic leader who thrives on success and recognition.",
+  "The Visionary": "The creative soul who rebels against the ordinary.",
+  "The Strategist": "The thinker who gathers intelligence to outmaneuver opponents.",
+  "The Sentinel": "The steadfast rebel who holds the group together.",
+  "The Maverick": "The thrill-seeking rebel who craves adventure and freedom.",
+  "The Warlord": "The fearless warrior who commands respect and power.",
+  "The Diplomat": "The calm, unifying force that keeps the rebellion from falling apart.",
+};
 
 export default function HomePage() {
   return (
@@ -58,7 +72,7 @@ export default function HomePage() {
                   </div>
                   <h2 className="text-2xl font-semibold mb-2 text-white">{type.name}</h2>
                   <p className="text-sm text-gray-300">
-                    Enter the world of {type.name}. Learn how this archetype rises and falls in the rebellion.
+                    {personalityDescriptions[type.name]}
                   </p>
                 </div>
               </Link>
