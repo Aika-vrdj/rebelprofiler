@@ -5,21 +5,21 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const enneagramTypes = [
-  { number: 1, name: "The Reformer", color: "bg-[#1E3A8A]" },
-  { number: 2, name: "The Helper", color: "bg-[#991B1B]" },
-  { number: 3, name: "The Achiever", color: "bg-[#854D0E]" },
-  { number: 4, name: "The Individualist", color: "bg-[#064E3B]" },
-  { number: 5, name: "The Investigator", color: "bg-[#581C87]" },
-  { number: 6, name: "The Loyalist", color: "bg-[#7C2D12]" },
-  { number: 7, name: "The Enthusiast", color: "bg-[#831843]" },
-  { number: 8, name: "The Challenger", color: "bg-[#312E81]" },
-  { number: 9, name: "The Peacemaker", color: "bg-[#134E4A]" },
+  { number: 1, name: "The Crusader", color: "bg-[#3A3A3A]" },
+  { number: 2, name: "The Guardian", color: "bg-[#8B0000]" },
+  { number: 3, name: "The Trailblazer", color: "bg-[#B8860B]" },
+  { number: 4, name: "The Visionary", color: "bg-[#4B0082]" },
+  { number: 5, name: "The Strategist", color: "bg-[#2F4F4F]" },
+  { number: 6, name: "The Sentinel", color: "bg-[#A52A2A]" },
+  { number: 7, name: "The Maverick", color: "bg-[#800000]" },
+  { number: 8, name: "The Warlord", color: "bg-[#333333]" },
+  { number: 9, name: "The Diplomat", color: "bg-[#444444]" },
 ];
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <main className="mx-auto max-w-7xl px-4 py-16">
+    <div className="min-h-screen bg-black text-gray-200">
+      <main className="mx-auto max-w-6xl px-6 py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -28,21 +28,19 @@ export default function HomePage() {
         >
           <Link
             href="/quiz"
-            className="inline-block mb-8 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+            className="inline-block mb-8 px-8 py-3 bg-red-700 text-white rounded-lg hover:bg-red-800 transition-all shadow-md"
           >
-            Take the Enneagram Quiz
+            Discover Your Rebel Mind
           </Link>
-          <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            The Enneagram Hub
+          <h1 className="text-5xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gold-500 to-red-600">
+            My Rebel Mind
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Discover the ancient wisdom of the Enneagram, a powerful tool for
-            personal growth and understanding. Explore all nine personality types
-            and uncover insights about yourself and others.
+          <p className="text-lg text-gray-400 max-w-3xl mx-auto">
+            Unlock your true nature and embrace the rebellion within. Find your Rebel Archetype and discover your path to power, strategy, and freedom.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {enneagramTypes.map((type, index) => (
             <motion.div
               key={type.number}
@@ -51,14 +49,16 @@ export default function HomePage() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Link href={`/type/${type.number}`}>
-                <div className={`${type.color} rounded-lg p-6 h-full transition-transform hover:scale-105 cursor-pointer`}>
+                <div
+                  className={`${type.color} rounded-xl p-6 h-full transition-transform hover:scale-105 cursor-pointer shadow-lg border border-gray-700`}
+                >
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-4xl font-bold">{type.number}</span>
-                    <ArrowRight className="h-6 w-6" />
+                    <span className="text-4xl font-extrabold text-gold-400">{type.number}</span>
+                    <ArrowRight className="h-6 w-6 text-gray-300" />
                   </div>
-                  <h2 className="text-2xl font-semibold mb-2">{type.name}</h2>
-                  <p className="text-sm opacity-90">
-                    Click to explore Type {type.number}'s traits, wings, and growth paths
+                  <h2 className="text-2xl font-semibold mb-2 text-white">{type.name}</h2>
+                  <p className="text-sm text-gray-300">
+                    Enter the world of {type.name}. Learn how this archetype rises and falls in the rebellion.
                   </p>
                 </div>
               </Link>
