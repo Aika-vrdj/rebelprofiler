@@ -45,7 +45,7 @@ const typeData: { [key: number]: TypeData } = {
   1: {
     name: "The Crusader",
     summary: "Ethical, dedicated and reliable, Ones are motivated by a desire to live the right way, improve the world, and avoid fault and blame.",
-    traits: ["Principled", "Purposeful", "Self-Controlled", "Perfectionistic"],
+    traits: ["Principled and purposeful", "Self-controlled and perfectionistic", "Rational and idealistic", "Organized and orderly", "Critical (of self and others)"],
     wings: {
       "1w9": {
         name: "The Vanguard",
@@ -92,7 +92,7 @@ const typeData: { [key: number]: TypeData } = {
   2: {
     name: "The Guardian",
     summary: "Warm, caring, and giving, Twos are motivated by a need to be loved and needed, and to avoid acknowledging their own needs.",
-    traits: ["Caring", "Generous", "Empathetic", "People-Pleasing"],
+    traits: ["Caring and interpersonal", "Empathetic and sincere", "People-pleasing and possessive", "Generous and self-sacrificing", "Pride in helping others"],
     wings: {
       "2w1": {
         name: "The Benevolent",
@@ -139,7 +139,7 @@ const typeData: { [key: number]: TypeData } = {
   3: {
     name: "The Trailblazer",
     summary: "Success-oriented, pragmatic, and adaptable, Threes are motivated by a need to be successful, to distinguish themselves from others, and to avoid failure.",
-    traits: ["Ambitious", "Efficient", "Image-conscious", "Adaptable"],
+    traits: ["Ambitious and driven", "Image-conscious and adaptable", "Efficient and goal-oriented", "Competitive and status-seeking", "Self-promoting and charming"],
     wings: {
       "3w2": {
         name: "The Enchanter",
@@ -186,7 +186,7 @@ const typeData: { [key: number]: TypeData } = {
   4: {
     name: "The Visionary",
     summary: "Sensitive, introspective, and expressive, Fours are motivated by a need to be authentic, special and to avoid being ordinary or mundane.",
-    traits: ["Authentic", "Creative", "Sensitive", "Expressive"],
+    traits: ["Introspective and sensitive", "Creative and expressive", "Melancholic and dramatic", "Self-aware and authentic", "Emotional depth and intensity"],
     wings: {
       "4w3": {
         name: "The Patrician",
@@ -233,7 +233,7 @@ const typeData: { [key: number]: TypeData } = {
   5: {
     name: "The Strategist",
     summary: "Perceptive, innovative, and isolated, Fives are motivated by a need to gain knowledge, conserve energy, and avoid relying on others.",
-    traits: ["Analytical", "Perceptive", "Private", "Innovative"],
+    traits: ["Analytical and perceptive", "Private and detached", "Intellectual and innovative", "Conservation of resources", "Minimalist and autonomous"],
     wings: {
       "5w4": {
         name: "The Strategos",
@@ -280,7 +280,7 @@ const typeData: { [key: number]: TypeData } = {
   6: {
     name: "The Sentinel",
     summary: "Committed, security-oriented, and engaging, Sixes are motivated by a need for security, guidance, and to avoid danger.",
-    traits: ["Loyal", "Responsible", "Security-focused", "Vigilant"],
+    traits: ["Loyal and committed", "Anxious and vigilant", "Questioning and doubting", "Responsible and dutiful", "Security-seeking and cautious"],
     wings: {
       "6w5": {
         name: "The Guardian",
@@ -327,7 +327,7 @@ const typeData: { [key: number]: TypeData } = {
   7: {
     name: "The Maverick",
     summary: "Busy, fun-loving, and spontaneous, Sevens are motivated by a need to be happy, to plan stimulating experiences, and to avoid pain.",
-    traits: ["Optimistic", "Adventurous", "Versatile", "Spontaneous"],
+    traits: ["Enthusiastic and optimistic", "Versatile and spontaneous", "Scattered and distractible", "Adventure-seeking and pleasure-oriented", "Future-focused and planning"],
     wings: {
       "7w6": {
         name: "The Entertainer",
@@ -374,7 +374,7 @@ const typeData: { [key: number]: TypeData } = {
   8: {
     name: "The Warlord",
     summary: "Powerful, dominating, and self-confident, Eights are motivated by a need to be strong, to maintain control over their environment, and to avoid vulnerability.",
-    traits: ["Strong-willed", "Decisive", "Protective", "Confrontational"],
+    traits: ["Assertive and direct", "Protective and commanding", "Self-confident and decisive", "Confrontational and justice-oriented", "Control-seeking and independent"],
     wings: {
       "8w7": {
         name: "The Berserker",
@@ -421,7 +421,7 @@ const typeData: { [key: number]: TypeData } = {
   9: {
     name: "The Diplomat",
     summary: "Easygoing, self-effacing, and receptive, Nines are motivated by a need to keep the peace, merge with others, and avoid conflict.",
-    traits: ["Patient", "Receptive", "Harmonious", "Agreeable"],
+    traits: ["Peaceful and accommodating", "Harmonizing and mediating", "Comfortable and steady", "Conflict-avoidant and stubborn", "Self-forgetting and merging"],
     wings: {
       "9w8": {
         name: "The Tower",
