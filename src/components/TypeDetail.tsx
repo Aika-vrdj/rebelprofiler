@@ -43,17 +43,17 @@ interface TypeData {
 
 const typeData: { [key: number]: TypeData } = {
   1: {
-    name: "The Reformer",
+    name: "The Crusader",
     summary: "Ethical, dedicated and self-controlled, seeking to improve themselves and their world.",
     traits: ["Principled", "Purposeful", "Self-Controlled", "Perfectionistic"],
     wings: {
       "1w9": {
-        name: "The Idealist",
+        name: "The Vanguard",
         traits: ["More introverted", "Calmer", "Less confrontational", "More philosophical"],
         description: "Combines One's perfectionism with Nine's desire for peace and harmony."
       },
       "1w2": {
-        name: "The Advocate",
+        name: "The Justicar",
         traits: ["More extroverted", "People-oriented", "More emotional", "Service-focused"],
         description: "Combines One's idealism with Two's desire to help others."
       }
@@ -90,17 +90,17 @@ const typeData: { [key: number]: TypeData } = {
     color: "bg-primary"
   },
   2: {
-    name: "The Helper",
+    name: "The Guardian",
     summary: "Empathetic, sincere and warm-hearted, they are motivated by a need to be loved and needed.",
     traits: ["Caring", "Generous", "Empathetic", "People-Pleasing"],
     wings: {
       "2w1": {
-        name: "The Servant",
+        name: "The Benevolent",
         traits: ["More organized", "Principled", "Dutiful", "Service-oriented"],
         description: "Combines Two's caring nature with One's sense of duty and ethics."
       },
       "2w3": {
-        name: "The Host/Hostess",
+        name: "The Emissary",
         traits: ["More outgoing", "Image-conscious", "Ambitious", "Charming"],
         description: "Combines Two's helpfulness with Three's charm and social adaptability."
       }
@@ -137,17 +137,17 @@ const typeData: { [key: number]: TypeData } = {
     color: "bg-[#991B1B]"
   },
   3: {
-    name: "The Achiever",
+    name: "The Trailblazer",
     summary: "Ambitious, adaptable and success-oriented, driven by a need to be admired and to achieve success.",
     traits: ["Ambitious", "Efficient", "Image-conscious", "Adaptable"],
     wings: {
       "3w2": {
-        name: "The Charmer",
+        name: "The Enchanter",
         traits: ["More people-oriented", "Helpful", "Diplomatic", "Engaging"],
         description: "Combines Three's ambition with Two's desire to be liked and helpful."
       },
       "3w4": {
-        name: "The Professional",
+        name: "The Ace",
         traits: ["More introspective", "Creative", "Distinguished", "Refined"],
         description: "Combines Three's drive for success with Four's creativity and authenticity."
       }
@@ -184,17 +184,17 @@ const typeData: { [key: number]: TypeData } = {
     color: "bg-[#854D0E]"
   },
   4: {
-    name: "The Individualist",
+    name: "The Visionary",
     summary: "Creative, sensitive, and expressive, driven by a need to be unique and find meaning in life.",
     traits: ["Authentic", "Creative", "Sensitive", "Expressive"],
     wings: {
       "4w3": {
-        name: "The Aristocrat",
+        name: "The Patrician",
         traits: ["More ambitious", "Image-conscious", "Success-oriented", "Competitive"],
         description: "Combines Four's creativity with Three's drive for achievement and recognition."
       },
       "4w5": {
-        name: "The Bohemian",
+        name: "The Mystagogue",
         traits: ["More introspective", "Intellectual", "Reserved", "Philosophical"],
         description: "Combines Four's emotional depth with Five's analytical nature and wisdom."
       }
@@ -231,17 +231,17 @@ const typeData: { [key: number]: TypeData } = {
     color: "bg-[#064E3B]"
   },
   5: {
-    name: "The Investigator",
+    name: "The Strategist",
     summary: "Perceptive, innovative, and private, driven by a need to understand and master the world around them.",
     traits: ["Analytical", "Perceptive", "Private", "Innovative"],
     wings: {
       "5w4": {
-        name: "The Iconoclast",
+        name: "The Strategos",
         traits: ["More creative", "Emotionally aware", "Artistic", "Unconventional"],
         description: "Combines Five's intellect with Four's creativity and emotional depth."
       },
       "5w6": {
-        name: "The Problem Solver",
+        name: "The Protector",
         traits: ["More practical", "Security-oriented", "Systematic", "Loyal"],
         description: "Combines Five's knowledge-seeking with Six's need for security and structure."
       }
@@ -278,17 +278,17 @@ const typeData: { [key: number]: TypeData } = {
     color: "bg-[#581C87]"
   },
   6: {
-    name: "The Loyalist",
+    name: "The Sentinel",
     summary: "Committed, security-oriented, and engaging, driven by the need for security and support.",
     traits: ["Loyal", "Responsible", "Security-focused", "Vigilant"],
     wings: {
       "6w5": {
-        name: "The Defender",
+        name: "The Guardian",
         traits: ["More analytical", "Reserved", "Intellectual", "Systematic"],
         description: "Combines Six's loyalty with Five's analytical nature and objectivity."
       },
       "6w7": {
-        name: "The Buddy",
+        name: "The Shieldbearer",
         traits: ["More optimistic", "Sociable", "Adventurous", "Engaging"],
         description: "Combines Six's commitment with Seven's enthusiasm and positivity."
       }
@@ -325,7 +325,7 @@ const typeData: { [key: number]: TypeData } = {
     color: "bg-[#7C2D12]"
   },
   7: {
-    name: "The Enthusiast",
+    name: "The Maverick",
     summary: "Spontaneous, versatile, and adventurous, driven by a need to experience life's pleasures and avoid pain.",
     traits: ["Optimistic", "Adventurous", "Versatile", "Spontaneous"],
     wings: {
@@ -335,7 +335,7 @@ const typeData: { [key: number]: TypeData } = {
         description: "Combines Seven's enthusiasm with Six's commitment and connection to others."
       },
       "7w8": {
-        name: "The Realist",
+        name: "The Warden",
         traits: ["More assertive", "Goal-oriented", "Independent", "Practical"],
         description: "Combines Seven's versatility with Eight's strength and decisiveness."
       }
@@ -372,12 +372,12 @@ const typeData: { [key: number]: TypeData } = {
     color: "bg-[#831843]"
   },
   8: {
-    name: "The Challenger",
+    name: "The Warlord",
     summary: "Powerful, dominating, and self-confident, driven by a need to be strong and avoid vulnerability.",
     traits: ["Strong-willed", "Decisive", "Protective", "Confrontational"],
     wings: {
       "8w7": {
-        name: "The Maverick",
+        name: "The Berserker",
         traits: ["More adventurous", "Fun-loving", "Energetic", "Rebellious"],
         description: "Combines Eight's strength with Seven's enthusiasm and adventurousness."
       },
@@ -419,17 +419,17 @@ const typeData: { [key: number]: TypeData } = {
     color: "bg-[#312E81]"
   },
   9: {
-    name: "The Peacemaker",
+    name: "The Diplomat",
     summary: "Accepting, trusting, and stable, driven by a need to maintain peace and avoid conflict.",
     traits: ["Patient", "Receptive", "Harmonious", "Agreeable"],
     wings: {
       "9w8": {
-        name: "The Referee",
+        name: "The Pillar",
         traits: ["More assertive", "Independent", "Physical", "Grounded"],
         description: "Combines Nine's peace-seeking with Eight's strength and independence."
       },
       "9w1": {
-        name: "The Dreamer",
+        name: "The Oracle",
         traits: ["More idealistic", "Principled", "Orderly", "Perfectionist"],
         description: "Combines Nine's acceptance with One's idealism and sense of purpose."
       }
