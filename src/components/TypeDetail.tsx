@@ -80,7 +80,7 @@ const typeData: { [key: number]: TypeData } = {
     },
     strengths: ["Honest", "Responsible", "Improvement-oriented", "Ethical"],
     challenges: ["Criticality", "Rigidity", "Impatience", "Self-criticism"],
-    examples: ["Nelson Mandela", "Michelle Obama", "Mahatma Gandhi"],
+    examples: ["I must be perfect to be worthy; the truth is, I am enough just as I am."],
     subtypes: {
       selfPreservation: "Focused on personal security and maintaining order in their environment",
       sexual: "Intense about personal relationships and maintaining high standards in partnerships",
@@ -127,7 +127,7 @@ const typeData: { [key: number]: TypeData } = {
     },
     strengths: ["Empathy", "Generosity", "Emotional Intelligence", "Nurturing"],
     challenges: ["Dependency", "People-pleasing", "Boundary issues", "Pride"],
-    examples: ["Mother Teresa", "Desmond Tutu", "Princess Diana"],
+    examples: ["I must be needed and loved to matter; the truth is, my worth comes from within."],
     subtypes: {
       selfPreservation: "Focused on meeting their own needs through helping others",
       sexual: "Intense in relationships, seeking intimate connections through giving",
@@ -174,7 +174,7 @@ const typeData: { [key: number]: TypeData } = {
     },
     strengths: ["Drive", "Efficiency", "Adaptability", "Leadership"],
     challenges: ["Workaholism", "Image-focus", "Authenticity issues", "Validation-seeking"],
-    examples: ["Tony Robbins", "Taylor Swift", "Tom Cruise"],
+    examples: ["I must achieve to be valued; the truth is, I am valuable for who I am, not what I do."],
     subtypes: {
       selfPreservation: "Focused on security through personal achievement and material success",
       sexual: "Seeks to be the best and most attractive in relationships",
@@ -221,7 +221,7 @@ const typeData: { [key: number]: TypeData } = {
     },
     strengths: ["Creativity", "Empathy", "Authenticity", "Emotional depth"],
     challenges: ["Melancholy", "Self-absorption", "Envy", "Mood fluctuations"],
-    examples: ["Vincent van Gogh", "Virginia Woolf", "Johnny Depp"],
+    examples: ["I am different and must be special to be loved; the truth is, I am loved for my true self"],
     subtypes: {
       selfPreservation: "Focused on enduring suffering and finding personal meaning through hardship",
       sexual: "Seeks intense, passionate connections and dramatic emotional experiences",
@@ -268,7 +268,7 @@ const typeData: { [key: number]: TypeData } = {
     },
     strengths: ["Intelligence", "Objectivity", "Innovation", "Expertise"],
     challenges: ["Isolation", "Detachment", "Hoarding", "Overthinking"],
-    examples: ["Albert Einstein", "Stephen Hawking", "Bill Gates"],
+    examples: ["I must have knowledge and control to feel safe; the truth is, I am safe even in uncertainty."],
     subtypes: {
       selfPreservation: "Focused on maintaining physical security and minimizing needs",
       sexual: "Seeks intense intellectual connections and sharing of knowledge",
@@ -315,14 +315,14 @@ const typeData: { [key: number]: TypeData } = {
     },
     strengths: ["Loyalty", "Responsibility", "Problem-solving", "Perseverance"],
     challenges: ["Anxiety", "Doubt", "Over-thinking", "Reactivity"],
-    examples: ["George H.W. Bush", "Robert De Niro", "Michelle Pfeiffer"],
+    examples: ["I must be prepared and secure to be worthy; the truth is, I am safe, capable, and worthy on my own."],
     subtypes: {
       selfPreservation: "Focused on physical security and worst-case scenarios",
       sexual: "Seeks strong partnerships and protection through relationships",
       social: "Creates alliances and support systems for security"
     },
     coreBelief: "I must be prepared and secure to be worthy",
-    commonLie: "The world is dangerous and I can't trust myself",
+    commonLie: "I am not safe or worthy unless I have external validation, support, and certainty.",
     color: "bg-[#7C2D12]"
   },
   7: {
@@ -362,7 +362,7 @@ const typeData: { [key: number]: TypeData } = {
     },
     strengths: ["Optimism", "Versatility", "Enthusiasm", "Vision"],
     challenges: ["Impulsivity", "Commitment issues", "Escapism", "Superficiality"],
-    examples: ["Robin Williams", "Leonardo DiCaprio", "Elton John"],
+    examples: ["I must avoid pain and seek pleasure to be happy; the truth is, embracing discomfort leads to true freedom."],
     subtypes: {
       selfPreservation: "Focused on maintaining comfort and avoiding limitation",
       sexual: "Seeks intense experiences and variety in relationships",
@@ -409,7 +409,7 @@ const typeData: { [key: number]: TypeData } = {
     },
     strengths: ["Leadership", "Protection", "Decisiveness", "Justice"],
     challenges: ["Excess", "Domination", "Confrontation", "Vulnerability-avoidance"],
-    examples: ["Martin Luther King Jr.", "Winston Churchill", "Muhammad Ali"],
+    examples: ["I must be strong and in control to avoid being hurt; the truth is, vulnerability is a source of power."],
     subtypes: {
       selfPreservation: "Focused on survival and material security through strength",
       sexual: "Seeks intense, passionate connections and possession in relationships",
@@ -456,7 +456,7 @@ const typeData: { [key: number]: TypeData } = {
     },
     strengths: ["Mediation", "Acceptance", "Stability", "Understanding"],
     challenges: ["Inertia", "Conflict-avoidance", "Self-forgetting", "Stubbornness"],
-    examples: ["Carl Jung", "Walt Disney", "Queen Elizabeth II"],
+    examples: ["I must maintain peace to be at ease; the truth is, I am at peace when I am true to myself."],
     subtypes: {
       selfPreservation: "Focused on physical comfort and maintaining routine",
       sexual: "Seeks union and merger in relationships",
@@ -582,7 +582,7 @@ export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailPr
             transition={{ delay: 0.6 }}
             className="bg-card rounded-lg p-6"
           >
-            <h2 className="text-2xl font-semibold mb-4">Famous Examples</h2>
+            <h2 className="text-2xl font-semibold mb-4">Mantra</h2>
             <ul className="list-disc list-inside space-y-2">
               {type.examples.map((example) => (
                 <li key={example}>{example}</li>
