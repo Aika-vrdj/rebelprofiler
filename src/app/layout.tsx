@@ -17,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable} dark bg-black text-gray-200`}>
       <body className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+        <TooltipProvider>
         {children}
+        </TooltipProvider>
       </body>
     </html>
   );
