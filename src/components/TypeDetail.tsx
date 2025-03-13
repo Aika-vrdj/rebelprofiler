@@ -533,7 +533,7 @@ export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailPr
                   className={`block p-4 rounded-lg ${
                     isWing && wingKey === wingKey 
                       ? "bg-accent text-accent-foreground" 
-                      : "bg-secondary hover:bg-gray-300"
+                      : "bg-secondary hover:bg-gray-600"
                   }`}
                 >
                   <h3 className="text-xl font-semibold mb-2">{wing.name}</h3>
