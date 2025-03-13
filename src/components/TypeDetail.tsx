@@ -636,11 +636,23 @@ export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailPr
             <h2 className="text-2xl font-semibold mb-4">Core Beliefs & Patterns</h2>
             <div className="space-y-4">
               <div>
-                <h3 className="text-xl font-semibold mb-2">Core Belief</h3>
+                <h3 className="text-xl font-semibold mb-2 flex items-center">
+                  Core Belief
+                <Tooltip>
+                  <TooltipTrigger className="ml-2 text-gray-500 cursor-pointer">❔</TooltipTrigger>
+                  <TooltipContent>This is the coping mechanism used to feel safe and live life, influencing all behavior.</TooltipContent>
+                </Tooltip>                
+                </h3>
                 <p className="text-lg">{type.coreBelief}</p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Common Lie</h3>
+                <h3 className="text-xl font-semibold mb-2 flex items-center">
+                  Common Lie
+                  <Tooltip>
+                    <TooltipTrigger className="ml-2 text-gray-500 cursor-pointer">❔</TooltipTrigger>
+                    <TooltipContent>This is how they interiorize the Core Belief, the lie they tell themselves to justify behavior.</TooltipContent>
+                  </Tooltip>
+                </h3>
                 <p className="text-lg">{type.commonLie}</p>
               </div>
             </div>
