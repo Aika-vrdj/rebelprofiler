@@ -472,7 +472,7 @@ export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailPr
   const type = typeData[typeNumber as keyof typeof typeData];
 
   return (
-  <TooltipProvider>
+  
     <div className="min-h-screen bg-background text-foreground py-16 px-4">
       <motion.div
         initial={{ opacity: 0 }}
@@ -661,6 +661,5 @@ export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailPr
         </div>
       </motion.div>
     </div>
-   </TooltipProvider>
   );
 }
