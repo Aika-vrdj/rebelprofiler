@@ -527,7 +527,7 @@ export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailPr
             <h2 className="text-2xl font-semibold mb-4">Wings</h2>
             <div className="space-y-4">
               {Object.entries(type.wings).map(([wingKey, wing]) => (
-                <Link 
+                <Div 
                   href={`/type/${typeNumber}/wing/${wingKey}`} 
                   key={wingKey}
                   className={`block p-4 rounded-lg ${
@@ -538,7 +538,7 @@ export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailPr
                 >
                   <h3 className="text-xl font-semibold mb-2">{wing.name}</h3>
                   <p className="text-sm text-muted-foreground">{wing.description}</p>
-                </Link>
+                </Div>
               ))}
             </div>
           </motion.div>
