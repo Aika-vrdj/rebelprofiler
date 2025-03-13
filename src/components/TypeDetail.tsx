@@ -526,7 +526,17 @@ export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailPr
             transition={{ delay: 0.4 }}
             className="bg-card rounded-lg p-6"
           >
-            <h2 className="text-2xl font-semibold mb-4">Wings</h2>
+            <h2 className="text-2xl font-semibold mb-4 flex items-center">
+              Wings
+              <Tooltip>
+                <TooltipTrigger className="ml-2 text-gray-400 text-sm cursor-pointer leading-none">
+                  <span className="inline-block px-1 py-0.5 border border-gray-400 rounded-full">?</span>
+                </TooltipTrigger>
+                <TooltipContent className="bg-gray-800 text-gray-200 text-sm font-normal px-3 py-1 rounded-md shadow-lg">
+                  Personalities are often influenced by a neighboring type, creating sub-types.
+                </TooltipContent>
+              </Tooltip>        
+            </h2>
             <div className="space-y-4">
               {Object.entries(type.wings).map(([wingKey, wing]) => (
                 <div 
@@ -551,7 +561,17 @@ export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailPr
             transition={{ delay: 0.5 }}
             className="bg-card rounded-lg p-6"
           >
-            <h2 className="text-2xl font-semibold mb-4">Integration & Disintegration</h2>
+            <h2 className="text-2xl font-semibold mb-4 flex items-center">
+              Integration & Disintegration
+              <Tooltip>
+                <TooltipTrigger className="ml-2 text-gray-400 text-sm cursor-pointer leading-none">
+                  <span className="inline-block px-1 py-0.5 border border-gray-400 rounded-full">?</span>
+                </TooltipTrigger>
+                <TooltipContent className="bg-gray-800 text-gray-200 text-sm font-normal px-3 py-1 rounded-md shadow-lg">
+                  When doing good we "integrate" or adopt positive traits from another type, when in a bad place we "disintegrate" to another type.
+                </TooltipContent>
+              </Tooltip> 
+            </h2>
             <p className="mb-2">{type.integration}</p>
             <p>{type.disintegration}</p>
           </motion.div>
@@ -576,7 +596,17 @@ export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailPr
             transition={{ delay: 0.7 }}
             className="bg-card rounded-lg p-6 col-span-2"
           >
-            <h2 className="text-2xl font-semibold mb-4">Health Levels</h2>
+            <h2 className="text-2xl font-semibold mb-4 flex items-center">
+              Health Levels
+              <Tooltip>
+                <TooltipTrigger className="ml-2 text-gray-400 text-sm cursor-pointer leading-none">
+                  <span className="inline-block px-1 py-0.5 border border-gray-400 rounded-full">?</span>
+                </TooltipTrigger>
+                <TooltipContent className="bg-gray-800 text-gray-200 text-sm font-normal px-3 py-1 rounded-md shadow-lg">
+                  We are "healthy" when we are in a good state of mind and are doing well.
+                </TooltipContent>
+              </Tooltip>
+            </h2>
             <div className="grid grid-cols-3 gap-4">
               <div>
                 <h3 className="text-xl font-semibold mb-2 text-green-500">Healthy</h3>
