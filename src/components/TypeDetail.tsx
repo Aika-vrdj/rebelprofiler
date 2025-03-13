@@ -46,7 +46,7 @@ const typeData: { [key: number]: TypeData } = {
   1: {
     name: "The Crusader",
     summary: "Ethical, dedicated and reliable, Ones are motivated by a desire to live the right way, improve the world, and avoid fault and blame.",
-    traits: ["Principled and purposeful", "Self-controlled and perfectionistic", "Rational and idealistic", "Organized and orderly", "Critical (of self and others)"],
+    traits: ["Principled and purposeful", "Self-controlled and perfectionistic", "Rational and idealistic", "Organized and orderly", "Critical (of self and others)", "Gut Center: Processes the world via their instincts."],
     wings: {
       "1w9": {
         name: "Type 1 wing 9 - The Vanguard",
@@ -93,7 +93,7 @@ const typeData: { [key: number]: TypeData } = {
   2: {
     name: "The Guardian",
     summary: "Warm, caring, and giving, Twos are motivated by a need to be loved and needed, and to avoid acknowledging their own needs.",
-    traits: ["Caring and interpersonal", "Empathetic and sincere", "People-pleasing and possessive", "Generous and self-sacrificing", "Pride in helping others"],
+    traits: ["Caring and interpersonal", "Empathetic and sincere", "People-pleasing and possessive", "Generous and self-sacrificing", "Pride in helping others", "Heart Center: Processes the world via their feelings."],
     wings: {
       "2w1": {
         name: "Type 2 wing 1 - The Benevolent",
@@ -140,7 +140,7 @@ const typeData: { [key: number]: TypeData } = {
   3: {
     name: "The Trailblazer",
     summary: "Success-oriented, pragmatic, and adaptable, Threes are motivated by a need to be successful, to distinguish themselves from others, and to avoid failure.",
-    traits: ["Ambitious and driven", "Image-conscious and adaptable", "Efficient and goal-oriented", "Competitive and status-seeking", "Self-promoting and charming"],
+    traits: ["Ambitious and driven", "Image-conscious and adaptable", "Efficient and goal-oriented", "Competitive and status-seeking", "Self-promoting and charming", "Heart Center: Processes the world via their feelings."],
     wings: {
       "3w2": {
         name: "Type 3 wing 2 - The Enchanter",
@@ -187,7 +187,7 @@ const typeData: { [key: number]: TypeData } = {
   4: {
     name: "The Visionary",
     summary: "Sensitive, introspective, and expressive, Fours are motivated by a need to be authentic, special and to avoid being ordinary or mundane.",
-    traits: ["Introspective and sensitive", "Creative and expressive", "Melancholic and dramatic", "Self-aware and authentic", "Emotional depth and intensity"],
+    traits: ["Introspective and sensitive", "Creative and expressive", "Melancholic and dramatic", "Self-aware and authentic", "Emotional depth and intensity", "Heart Center: Processes the world via their feelings."],
     wings: {
       "4w3": {
         name: "Type 4 wing 3 - The Patrician",
@@ -234,7 +234,7 @@ const typeData: { [key: number]: TypeData } = {
   5: {
     name: "The Strategist",
     summary: "Perceptive, innovative, and isolated, Fives are motivated by a need to gain knowledge, conserve energy, and avoid relying on others.",
-    traits: ["Analytical and perceptive", "Private and detached", "Intellectual and innovative", "Conservation of resources", "Minimalist and autonomous"],
+    traits: ["Analytical and perceptive", "Private and detached", "Intellectual and innovative", "Conservation of resources", "Minimalist and autonomous", "Head Center: Processes the world via their thinking."],
     wings: {
       "5w4": {
         name: "Type 5 wing 4 - The Strategos",
@@ -281,7 +281,7 @@ const typeData: { [key: number]: TypeData } = {
   6: {
     name: "The Sentinel",
     summary: "Committed, security-oriented, and engaging, Sixes are motivated by a need for security, guidance, and to avoid danger.",
-    traits: ["Loyal and committed", "Anxious and vigilant", "Questioning and doubting", "Responsible and dutiful", "Security-seeking and cautious"],
+    traits: ["Loyal and committed", "Anxious and vigilant", "Questioning and doubting", "Responsible and dutiful", "Security-seeking and cautious", "Head Center: Processes the world via their thinking."],
     wings: {
       "6w5": {
         name: "Type 6 wing 5 - The Guardian",
@@ -328,7 +328,7 @@ const typeData: { [key: number]: TypeData } = {
   7: {
     name: "The Maverick",
     summary: "Busy, fun-loving, and spontaneous, Sevens are motivated by a need to be happy, to plan stimulating experiences, and to avoid pain.",
-    traits: ["Enthusiastic and optimistic", "Versatile and spontaneous", "Scattered and distractible", "Adventure-seeking and pleasure-oriented", "Future-focused and planning"],
+    traits: ["Enthusiastic and optimistic", "Versatile and spontaneous", "Scattered and distractible", "Adventure-seeking and pleasure-oriented", "Future-focused and planning", "Head Center: Processes the world via their thinking."],
     wings: {
       "7w6": {
         name: "Type 7 wing 6 - The Entertainer",
@@ -375,7 +375,7 @@ const typeData: { [key: number]: TypeData } = {
   8: {
     name: "The Warlord",
     summary: "Powerful, dominating, and self-confident, Eights are motivated by a need to be strong, to maintain control over their environment, and to avoid vulnerability.",
-    traits: ["Assertive and direct", "Protective and commanding", "Self-confident and decisive", "Confrontational and justice-oriented", "Control-seeking and independent"],
+    traits: ["Assertive and direct", "Protective and commanding", "Self-confident and decisive", "Confrontational and justice-oriented", "Control-seeking and independent", "Gut Center: Processes the world via their instincts."],
     wings: {
       "8w7": {
         name: "Type 8 wing 7 - The Berserker",
@@ -422,7 +422,7 @@ const typeData: { [key: number]: TypeData } = {
   9: {
     name: "The Diplomat",
     summary: "Easygoing, self-effacing, and receptive, Nines are motivated by a need to keep the peace, merge with others, and avoid conflict.",
-    traits: ["Peaceful and accommodating", "Harmonizing and mediating", "Comfortable and steady", "Conflict-avoidant and stubborn", "Self-forgetting and merging"],
+    traits: ["Peaceful and accommodating", "Harmonizing and mediating", "Comfortable and steady", "Conflict-avoidant and stubborn", "Self-forgetting and merging", "Gut Center: Processes the world via their instincts."],
     wings: {
       "9w8": {
         name: "Type 9 wing 8 - The Tower",
