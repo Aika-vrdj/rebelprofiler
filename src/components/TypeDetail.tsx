@@ -640,9 +640,13 @@ export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailPr
                 <h3 className="text-xl font-semibold mb-2 flex items-center">
                   Core Belief
                 <Tooltip>
-                  <TooltipTrigger className="ml-2 text-gray-500 cursor-pointer">❔</TooltipTrigger>
-                  <TooltipContent>This is the coping mechanism used to feel safe and live life, influencing all behavior.</TooltipContent>
-                </Tooltip>                
+                  <TooltipTrigger className="ml-2 text-gray-400 text-sm cursor-pointer leading-none">
+                    <span className="inline-block px-1 py-0.5 border border-gray-400 rounded-full">?</span>
+                  </TooltipTrigger>
+                  <TooltipContent className="bg-gray-800 text-gray-200 text-sm font-normal px-3 py-1 rounded-md shadow-lg">
+                    This is the coping mechanism used to feel safe and live life, influencing all behavior.
+                  </TooltipContent>
+                </Tooltip>               
                 </h3>
                 <p className="text-lg">{type.coreBelief}</p>
               </div>
