@@ -6,15 +6,15 @@ import { ArrowRight } from "lucide-react";
 
 // List of enneagram types with corresponding colors
 const enneagramTypes = [
-  { number: 1, name: "The Crusader", color: "bg-[#dfb82c]" },
-  { number: 2, name: "The Guardian", color: "bg-[#dca432]" },
-  { number: 3, name: "The Trailblazer", color: "bg-[#d98f38]" },
-  { number: 4, name: "The Visionary", color: "bg-[#d67b3f]" },
-  { number: 5, name: "The Strategist", color: "bg-[#d36645]" },
-  { number: 6, name: "The Sentinel", color: "bg-[#d0524b]" },
-  { number: 7, name: "The Maverick", color: "bg-[#cc3d51]" },
-  { number: 8, name: "The Warlord", color: "bg-[#c92957" },
-  { number: 9, name: "The Diplomat", color: "bg-[#c6155e]" },
+  { number: 1, name: "The Crusader", color: "bg-[#1d1d1b]" },
+  { number: 2, name: "The Guardian", color: "bg-[#1d1d1b]" },
+  { number: 3, name: "The Trailblazer", color: "bg-[#1d1d1b]" },
+  { number: 4, name: "The Visionary", color: "bg-[#1d1d1b]" },
+  { number: 5, name: "The Strategist", color: "bg-[#1d1d1b]" },
+  { number: 6, name: "The Sentinel", color: "bg-[#1d1d1b]" },
+  { number: 7, name: "The Maverick", color: "bg-[#1d1d1b]" },
+  { number: 8, name: "The Warlord", color: "bg-[#1d1d1b]" },
+  { number: 9, name: "The Diplomat", color: "bg-[#1d1d1b]" },
 ];
 
 // Descriptions for each personality type
