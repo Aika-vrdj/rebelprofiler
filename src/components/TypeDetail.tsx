@@ -606,27 +606,68 @@ export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailPr
           </motion.div>
 
           <motion.div
-            initial={{ x: -20, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.8 }}
-            className="bg-card rounded-lg p-6 col-span-2"
-          >
-            <h2 className="text-2xl font-semibold mb-4">Instinctual Subtypes</h2>
-            <div className="grid grid-cols-3 gap-4">
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Self-Preservation</h3>
-                <p>{type.subtypes.selfPreservation}</p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Sexual</h3>
-                <p>{type.subtypes.sexual}</p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Social</h3>
-                <p>{type.subtypes.social}</p>
-              </div>
-            </div>
-          </motion.div>
+  initial={{ x: -20, opacity: 0 }}
+  animate={{ x: 0, opacity: 1 }}
+  transition={{ delay: 0.8 }}
+  className="bg-card rounded-lg p-6 col-span-2"
+>
+  <h2 className="text-2xl font-semibold mb-4 flex items-center">
+    Instinctual Subtypes
+    <Tooltip>
+      <TooltipTrigger className="ml-2 text-gray-400 text-sm cursor-pointer leading-none">
+        <span className="inline-block px-1 py-0.5 border border-gray-400 rounded-full">?</span>
+      </TooltipTrigger>
+      <TooltipContent className="bg-gray-800 text-gray-200 text-sm font-normal px-3 py-1 rounded-md shadow-lg">
+        The three instinctual subtypes shape how a person directs their energy in life.
+      </TooltipContent>
+    </Tooltip>
+  </h2>
+  <div className="grid grid-cols-3 gap-4">
+    <div>
+      <h3 className="text-xl font-semibold mb-2 flex items-center">
+        Self-Preservation
+        <Tooltip>
+          <TooltipTrigger className="ml-2 text-gray-400 text-sm cursor-pointer leading-none">
+            <span className="inline-block px-1 py-0.5 border border-gray-400 rounded-full">?</span>
+          </TooltipTrigger>
+          <TooltipContent className="bg-gray-800 text-gray-200 text-sm font-normal px-3 py-1 rounded-md shadow-lg">
+            Focuses on safety, comfort, health, and practical needs.
+          </TooltipContent>
+        </Tooltip>
+      </h3>
+      <p>{type.subtypes.selfPreservation}</p>
+    </div>
+    <div>
+      <h3 className="text-xl font-semibold mb-2 flex items-center">
+        Sexual
+        <Tooltip>
+          <TooltipTrigger className="ml-2 text-gray-400 text-sm cursor-pointer leading-none">
+            <span className="inline-block px-1 py-0.5 border border-gray-400 rounded-full">?</span>
+          </TooltipTrigger>
+          <TooltipContent className="bg-gray-800 text-gray-200 text-sm font-normal px-3 py-1 rounded-md shadow-lg">
+            Focuses on intensity, one-on-one relationships, and passion.
+          </TooltipContent>
+        </Tooltip>
+      </h3>
+      <p>{type.subtypes.sexual}</p>
+    </div>
+    <div>
+      <h3 className="text-xl font-semibold mb-2 flex items-center">
+        Social
+        <Tooltip>
+          <TooltipTrigger className="ml-2 text-gray-400 text-sm cursor-pointer leading-none">
+            <span className="inline-block px-1 py-0.5 border border-gray-400 rounded-full">?</span>
+          </TooltipTrigger>
+          <TooltipContent className="bg-gray-800 text-gray-200 text-sm font-normal px-3 py-1 rounded-md shadow-lg">
+            Focuses on group belonging, status, and social networks.
+          </TooltipContent>
+        </Tooltip>
+      </h3>
+      <p>{type.subtypes.social}</p>
+    </div>
+  </div>
+</motion.div>
+
 
           <motion.div
             initial={{ x: -20, opacity: 0 }}
@@ -653,10 +694,14 @@ export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailPr
               <div>
                 <h3 className="text-xl font-semibold mb-2 flex items-center">
                   Common Lie
-                  <Tooltip>
-                    <TooltipTrigger className="ml-2 text-gray-500 cursor-pointer">❔</TooltipTrigger>
-                    <TooltipContent>This is how they interiorize the Core Belief, the lie they tell themselves to justify behavior.</TooltipContent>
-                  </Tooltip>
+                 <Tooltip>
+                  <TooltipTrigger className="ml-2 text-gray-400 text-sm cursor-pointer leading-none">
+                    <span className="inline-block px-1 py-0.5 border border-gray-400 rounded-full">?</span>
+                  </TooltipTrigger>
+                  <TooltipContent className="bg-gray-800 text-gray-200 text-sm font-normal px-3 py-1 rounded-md shadow-lg">
+                   This is how they interiorize the Core Belief, the lie they tell themselves to justify behavior.
+                  </TooltipContent>
+                </Tooltip>        
                 </h3>
                 <p className="text-lg">{type.commonLie}</p>
               </div>
