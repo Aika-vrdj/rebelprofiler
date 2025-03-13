@@ -58,8 +58,8 @@ const typeData: { [key: number]: TypeData } = {
         description: "Combines One's idealism with Two's desire to help others. The enforcer of justice and protector of the cause, standing firm in the face of moral conflict."
       }
     },
-    integration: "Moves to Type 7 in growth",
-    disintegration: "Moves to Type 4 in stress",
+    integration: "In growth moves to Type 7 - The Maverick: Becomes more spontaneous, joyful, and open-minded, allowing for creativity and flexibility.",
+    disintegration: "In stress moves to Type 4 - The Trailblazer: Becomes overly self-critical, withdrawn, and emotionally turbulent, losing their sense of purpose in frustration.",
     healthLevels: {
       healthy: [
         "Becomes accepting and patient with self and others",
@@ -105,8 +105,8 @@ const typeData: { [key: number]: TypeData } = {
         description: "Combines Two's helpfulness with Three's charm and social adaptability.The charismatic diplomat who fosters relationships and alliances, skilled in the art of persuasion."
       }
     },
-    integration: "Moves to Type 4 in growth",
-    disintegration: "Moves to Type 8 in stress",
+    integration: "In growth moves to Type 4 - The Trailblazer: Develops deeper self-awareness and emotional depth, embracing their own needs rather than always prioritizing others.",
+    disintegration: "In stress moves to Type 8 - The Warlord: Becomes controlling, demanding, and aggressive when feeling unappreciated.",
     healthLevels: {
       healthy: [
         "Becomes genuinely caring and altruistic",
@@ -152,8 +152,8 @@ const typeData: { [key: number]: TypeData } = {
         description: "Combines Three's drive for success with Four's creativity and authenticity. The ambitious and polished strategist, skilled in both the art of success and cultivating a strong personal identity."
       }
     },
-    integration: "Moves to Type 6 in growth",
-    disintegration: "Moves to Type 9 in stress",
+    integration: "In growth moves to Type 6 - The Sentinel: Gains loyalty, teamwork, and a sense of responsibility, realizing success is not just personal but collective.",
+    disintegration: "In stress moves to Type 9 - The Diplomat: Becomes disengaged, apathetic, and indifferent, losing their drive in exhaustion.",
     healthLevels: {
       healthy: [
         "Becomes self-accepting and authentic",
@@ -199,8 +199,8 @@ const typeData: { [key: number]: TypeData } = {
         description: "Combines Four's emotional depth with Five's analytical nature and wisdom. The eccentric and introspective visionary, seeking deeper meaning in a world that often misunderstands them."
       }
     },
-    integration: "Moves to Type 1 in growth",
-    disintegration: "Moves to Type 2 in stress",
+    integration: "In growth moves to Type 1 - The Crusader: Gains structure, discipline, and clarity, channeling their creativity into tangible action.",
+    disintegration: "In stress moves to Type 2 - The Guardian: Becomes emotionally needy, seeking validation and over-investing in relationships to feel worthy.",
     healthLevels: {
       healthy: [
         "Becomes inspired and creative",
@@ -246,8 +246,8 @@ const typeData: { [key: number]: TypeData } = {
         description: "Combines Five's knowledge-seeking with Six's need for security and structure. The ever-watchful protector, standing strong as the defense of the rebellion’s core values and mission."
       }
     },
-    integration: "Moves to Type 8 in growth",
-    disintegration: "Moves to Type 7 in stress",
+    integration: "In growth moves to Type 8 - The Warlord: Gains confidence, assertiveness, and the courage to act decisively rather than just observing.",
+    disintegration: "In stress moves to Type 7 - The Maverick: Becomes scattered, impulsive, and disconnected, overindulging in distractions instead of deep focus.",
     healthLevels: {
       healthy: [
         "Becomes visionary and pioneering",
@@ -293,8 +293,8 @@ const typeData: { [key: number]: TypeData } = {
         description: "Combines Six's commitment with Seven's enthusiasm and positivity. The loyal companion, offering support and protection, ensuring the survival of the group through unity and strength."
       }
     },
-    integration: "Moves to Type 9 in growth",
-    disintegration: "Moves to Type 3 in stress",
+    integration: "In growth moves to Type 9 - The Diplomat: Gains inner peace, trust, and a sense of calm, learning to rely on intuition instead of constant anxiety.",
+    disintegration: "In stress moves to Type 3 - The Trailblazer: Becomes image-conscious, competitive, and overly focused on external validation to combat insecurity.",
     healthLevels: {
       healthy: [
         "Becomes courageous and supportive",
@@ -340,8 +340,8 @@ const typeData: { [key: number]: TypeData } = {
         description: "Combines Seven's versatility with Eight's strength and decisiveness. The practical and driven force, balancing pragmatism with strength, ensuring the rebellion’s strategic advancement."
       }
     },
-    integration: "Moves to Type 5 in growth",
-    disintegration: "Moves to Type 1 in stress",
+    integration: "In growth moves to Type 5 - The Strategist: Becomes more introspective, focused, and disciplined, learning to sit with discomfort instead of always seeking novelty.",
+    disintegration: "In stress moves to Type 1 - The Crusader: Becomes rigid, critical, and perfectionistic, trying to control everything when overwhelmed.",
     healthLevels: {
       healthy: [
         "Becomes focused and appreciative",
@@ -387,8 +387,8 @@ const typeData: { [key: number]: TypeData } = {
         description: "Combines Eight's power with Nine's desire for peace and harmony. The immovable and indomitable force, bringing strength and calm in equal measure to the heart of the rebellion."
       }
     },
-    integration: "Moves to Type 2 in growth",
-    disintegration: "Moves to Type 5 in stress",
+    integration: "In growth moves to Type 2 - Guardian: Gains compassion, empathy, and emotional vulnerability, using their strength to protect rather than dominate.",
+    disintegration: "In stress moves to Type 5 - The Strategist: Becomes withdrawn, secretive, and overly suspicious, avoiding vulnerability and detaching from others.",
     healthLevels: {
       healthy: [
         "Becomes heroic and magnanimous",
@@ -434,8 +434,8 @@ const typeData: { [key: number]: TypeData } = {
         description: "Combines Nine's acceptance with One's idealism and sense of purpose. The peaceful idealist, envisioning a better world with a quiet yet potent drive for change and justice."
       }
     },
-    integration: "Moves to Type 3 in growth",
-    disintegration: "Moves to Type 6 in stress",
+    integration: "In growth moves to Type 3 - The Trailblazer: Becomes more ambitious, energetic, and engaged, taking action rather than avoiding conflict.",
+    disintegration: "In stress moves to Type 6 - The Sentinel: Becomes anxious, doubtful, and paranoid, losing trust in themselves and those around them.",
     healthLevels: {
       healthy: [
         "Becomes dynamic and engaged",
