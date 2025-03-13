@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      "@radix-ui/react-tooltip":
+        specifier: ^1.0.0
+        version: 1.0.0
+      "tailwind-variants":
+        specifier: ^1.0.0
+        version: 1.0.0
       '@jest/globals':
         specifier: ^29.7.0
         version: 29.7.0
