@@ -575,7 +575,7 @@ export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailPr
           </div>
         </motion.div>
 
-      </motion.div>  {/* ✅ Closing the main motion.div */}
-    </div>  {/* ✅ Closing the main container */}
+      </motion.div>  
+    </div>  
   );
 }
