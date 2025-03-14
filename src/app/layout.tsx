@@ -8,7 +8,16 @@ import Link from "next/link";  // Add this import for Link
 export const metadata: Metadata = {
   title: "The Rebel Mind",
   description: "Unleash your inner rebel and explore the nine revolutionary archetypes",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [
+    { rel: "icon", url: "/favicon.ico", sizes: "16x16" },
+    { rel: "icon", url: "/favicon.ico", sizes: "32x32" },
+    { rel: "icon", url: "/favicon.ico", sizes: "48x48" },
+    { rel: "icon", url: "/favicon.png", type: "image/png", sizes: "64x64" },
+    // Optional for Apple devices
+    { rel: "apple-touch-icon", href: "/apple-touch-icon.png", sizes: "180x180" },
+    // Optional for Android devices
+    { rel: "icon", href: "/android-chrome-192x192.png", sizes: "192x192" },
+  ],
 };
 
 export default function RootLayout({
