@@ -488,45 +488,6 @@ export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailPr
         </Link>
 
         <motion.div
-  initial={{ x: 20, opacity: 0 }}
-  animate={{ x: 0, opacity: 1 }}
-  transition={{ delay: 0.4 }}
-  className="bg-card rounded-lg p-6"
->
-  <h2 className="text-2xl font-semibold mb-4 flex items-center">
-    Wings
-    <Tooltip>
-      <TooltipTrigger className="ml-2 text-gray-400 text-sm cursor-pointer leading-none">
-        <span className="inline-block px-1 py-0.5 border border-gray-400 rounded-full">?</span>
-      </TooltipTrigger>
-      <TooltipContent className="bg-gray-800 text-gray-200 text-sm font-normal px-3 py-1 rounded-md shadow-lg">
-        Personalities are often influenced by a neighboring type, creating sub-types.
-      </TooltipContent>
-    </Tooltip>        
-  </h2>
-
-  {type.wings && Object.keys(type.wings).length > 0 ? (
-    <div className="space-y-4">
-      {Object.entries(type.wings).map(([wingKey, wing]) => (
-        <div 
-          key={wingKey}
-          className={`block p-4 rounded-lg ${
-            isWing && wingKey === wingKey 
-              ? "bg-accent text-accent-foreground" 
-              : "bg-secondary hover:bg-gray-600"
-          }`}
-        >
-          <h3 className="text-xl font-semibold mb-2">{wing.name}</h3>
-          <p className="text-sm text-muted-foreground">{wing.description}</p>
-        </div>
-      ))}
-    </div>
-  ) : (
-    <p className="text-sm text-gray-400">This type has no wings.</p>
-  )}
-</motion.div>
-
-          <motion.div
             initial={{ x: 20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.4 }}
