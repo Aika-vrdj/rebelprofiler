@@ -7,7 +7,9 @@ import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip
 
 interface TypeDetailProps {
   typeNumber: number;
- }
+  isWing?: boolean;
+  wingKey?: string;
+}
 
 interface WingData {
   name: string;
@@ -19,7 +21,7 @@ interface TypeData {
   name: string;
   summary: string;
   traits: string[];
-  wings: string[];
+  wings: { [key: string]: WingData };
   integration: string;
   disintegration: string;
   healthLevels: {
@@ -466,7 +468,7 @@ const typeData: { [key: number]: TypeData } = {
   }
 };
 
-export default function TypeDetail({ typeNumber}: TypeDetailProps) {
+export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailProps) {
   const typeData = typeData || {};  // ✅ Prevents "undefined" errors
   const type = typeData[typeNumber as keyof typeof typeData];
 
@@ -478,6 +480,9 @@ export default function TypeDetail({ typeNumber}: TypeDetailProps) {
         className="max-w-4xl mx-auto"
       >
         <Link 
+          href={isWing ? `/type/${typeNumber}` : "/"} 
+          className="inline-flex items-center text-gray-400 hover:text-white mb-8"
+        >
           <ArrowLeft className="mr-2 h-5 w-5" />
           Back to Overview
         </Link>
@@ -499,15 +504,23 @@ export default function TypeDetail({ typeNumber}: TypeDetailProps) {
                 Personalities are often influenced by a neighboring type, creating sub-types.
               </TooltipContent>
             </Tooltip>        
-           </h2>
-  <div className="space-y-4">
-    {type.traits.map((trait, index) => (
-      <div key={index} className="block p-4 rounded-lg bg-secondary hover:bg-gray-600">
-        <p className="text-sm text-muted-foreground">{trait}</p>
-      </div>
-    ))}
-  </div>
-</motion.div>
+          </h2>
+          <div className="space-y-4">
+            {Object.entries(type.wings).map(([wingKey, wing]) => (
+              <div 
+                key={wingKey} 
+                className={`block p-4 rounded-lg ${
+                  isWing && wingKey === wingKey 
+                    ? "bg-accent text-accent-foreground" 
+                    : "bg-secondary hover:bg-gray-600"
+                }`}
+              >
+                <h3 className="text-xl font-semibold mb-2">{wing.name}</h3>
+                <p className="text-sm text-muted-foreground">{wing.description}</p>
+              </div>
+            ))}
+          </div>
+        </motion.div>  
 
         {/* Instinctual Subtypes Section */}
         <motion.div
