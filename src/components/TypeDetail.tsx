@@ -74,7 +74,7 @@ const typeData: { [key: number]: TypeData } = {
         "Becomes obsessed with imperfection",
         "Develops rigid, judgmental attitudes",
         "Experiences intense self-criticism"
-      ]
+      ],
     },
     strengths: ["Honest", "Responsible", "Improvement-oriented", "Ethical"],
     challenges: ["Criticality", "Rigidity", "Impatience", "Self-criticism"],
