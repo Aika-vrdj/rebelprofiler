@@ -477,7 +477,7 @@ export default function TypeDetail({ typeNumber}: TypeDetailProps) {
         animate={{ opacity: 1 }}
         className="max-w-4xl mx-auto"
       >
-        <Link 
+        <Link href="/">
           <ArrowLeft className="mr-2 h-5 w-5" />
           Back to Overview
         </Link>
