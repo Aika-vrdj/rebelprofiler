@@ -19,7 +19,7 @@ interface TypeData {
   name: string;
   summary: string;
   traits: string[];
-  wings: string;
+  wings: { [key: string]: WingData };
   integration: string;
   disintegration: string;
   healthLevels: {
@@ -512,7 +512,9 @@ export default function TypeDetail({ typeNumber}: TypeDetailProps) {
                 <strong>Traits:</strong>
                 <ul className="list-disc pl-5">
                   {wing.traits.map((trait, index) => (
-                    <li key={index} className="text-sm text-muted-foreground">{trait}</li>
+                    <li key={index} className="text-sm text-muted-foreground">
+                      {trait}
+                    </li>
                   ))}
                 </ul>
               </div>
