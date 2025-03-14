@@ -7,8 +7,6 @@ import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip
 
 interface TypeDetailProps {
   typeNumber: number;
-  isWing?: boolean;
-  wingKey?: string;
 }
 
 interface WingData {
@@ -21,7 +19,7 @@ interface TypeData {
   name: string;
   summary: string;
   traits: string[];
-  wings: { [key: string]: WingData };
+  wings: string;
   integration: string;
   disintegration: string;
   healthLevels: {
@@ -468,7 +466,7 @@ const typeData: { [key: number]: TypeData } = {
   }
 };
 
-export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailProps) {
+export default function TypeDetail({ typeNumber}: TypeDetailProps) {
   const typeData = typeData || {};  // ✅ Prevents "undefined" errors
   const type = typeData[typeNumber as keyof typeof typeData];
 
@@ -480,47 +478,48 @@ export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailPr
         className="max-w-4xl mx-auto"
       >
         <Link 
-          href={isWing ? `/type/${typeNumber}` : "/"} 
-          className="inline-flex items-center text-gray-400 hover:text-white mb-8"
-        >
           <ArrowLeft className="mr-2 h-5 w-5" />
           Back to Overview
         </Link>
 
         {/* Wings Section */}
-        <motion.div
-          initial={{ x: 20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.4 }}
-          className="bg-card rounded-lg p-6"
-        >
-          <h2 className="text-2xl font-semibold mb-4 flex items-center">
-            Wings
-            <Tooltip>
-              <TooltipTrigger className="ml-2 text-gray-400 text-sm cursor-pointer leading-none">
-                <span className="inline-block px-1 py-0.5 border border-gray-400 rounded-full">?</span>
-              </TooltipTrigger>
-              <TooltipContent className="bg-gray-800 text-gray-200 text-sm font-normal px-3 py-1 rounded-md shadow-lg">
-                Personalities are often influenced by a neighboring type, creating sub-types.
-              </TooltipContent>
-            </Tooltip>        
-          </h2>
-          <div className="space-y-4">
-            {Object.entries(type.wings).map(([wingKey, wing]) => (
-              <div 
-                key={wingKey} 
-                className={`block p-4 rounded-lg ${
-                  isWing && wingKey === wingKey 
-                    ? "bg-accent text-accent-foreground" 
-                    : "bg-secondary hover:bg-gray-600"
-                }`}
-              >
-                <h3 className="text-xl font-semibold mb-2">{wing.name}</h3>
-                <p className="text-sm text-muted-foreground">{wing.description}</p>
+      <motion.div
+        initial={{ x: 20, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ delay: 0.4 }}
+        className="bg-card rounded-lg p-6"
+      >
+        <h2 className="text-2xl font-semibold mb-4 flex items-center">
+          Wings
+          <Tooltip>
+            <TooltipTrigger className="ml-2 text-gray-400 text-sm cursor-pointer leading-none">
+              <span className="inline-block px-1 py-0.5 border border-gray-400 rounded-full">?</span>
+            </TooltipTrigger>
+            <TooltipContent className="bg-gray-800 text-gray-200 text-sm font-normal px-3 py-1 rounded-md shadow-lg">
+              Personalities are often influenced by a neighboring type, creating sub-types.
+            </TooltipContent>
+          </Tooltip>
+        </h2>
+        <div className="space-y-4">
+          {Object.entries(type.wings).map(([wingKey, wing]) => (
+            <div 
+              key={wingKey} 
+              className="block p-4 rounded-lg bg-secondary hover:bg-gray-600"
+            >
+              <h3 className="text-xl font-semibold mb-2">{wing.name}</h3>
+              <p className="text-sm text-muted-foreground">{wing.description}</p>
+              <div className="mt-2">
+                <strong>Traits:</strong>
+                <ul className="list-disc pl-5">
+                  {wing.traits.map((trait, index) => (
+                    <li key={index} className="text-sm text-muted-foreground">{trait}</li>
+                  ))}
+                </ul>
               </div>
-            ))}
-          </div>
-        </motion.div>  
+            </div>
+          ))}
+        </div>
+      </motion.div>
 
         {/* Instinctual Subtypes Section */}
         <motion.div
