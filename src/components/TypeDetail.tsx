@@ -483,7 +483,6 @@ export default function TypeDetail({ typeNumber }: TypeDetailProps) {
         </Link>
       </motion.div>
 
-      {/* Wings Section */}
       <motion.div
         initial={{ x: 20, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -521,7 +520,6 @@ export default function TypeDetail({ typeNumber }: TypeDetailProps) {
         </div>
       </motion.div>
 
-      {/* Instinctual Subtypes Section */}
       <motion.div
         initial={{ x: -20, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -555,7 +553,6 @@ export default function TypeDetail({ typeNumber }: TypeDetailProps) {
         </div>
       </motion.div>
 
-      {/* Core Beliefs & Patterns */}
       <motion.div
         initial={{ x: -20, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -574,7 +571,7 @@ export default function TypeDetail({ typeNumber }: TypeDetailProps) {
           </div>
         </div>
       </motion.div>
-    </div>  {/* Closing the main container div */}
+    </div>  
   );
 }
 
