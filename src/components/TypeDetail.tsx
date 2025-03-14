@@ -483,8 +483,7 @@ export default function TypeDetail({ typeNumber}: TypeDetailProps) {
         </Link>
       </motion.div>
     </div>
-
-        {/* Wings Section */}
+  
       <motion.div
         initial={{ x: 20, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
