@@ -488,37 +488,43 @@ export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailPr
         </Link>
 
         <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className={`${type.color} rounded-lg p-8 mb-8`}
-        >
-          <h1 className="text-4xl font-bold mb-2">
-            {isWing && wingKey ? (
-              <>Wing {wingKey}: {type.wings[wingKey]?.name}</>
-            ) : (
-              <>Type {typeNumber}: {type.name}</>
-            )}
-          </h1>
-          <p className="text-xl opacity-90">
-            {isWing && wingKey ? type.wings[wingKey]?.description : type.summary}
-          </p>
-        </motion.div>
+  initial={{ x: 20, opacity: 0 }}
+  animate={{ x: 0, opacity: 1 }}
+  transition={{ delay: 0.4 }}
+  className="bg-card rounded-lg p-6"
+>
+  <h2 className="text-2xl font-semibold mb-4 flex items-center">
+    Wings
+    <Tooltip>
+      <TooltipTrigger className="ml-2 text-gray-400 text-sm cursor-pointer leading-none">
+        <span className="inline-block px-1 py-0.5 border border-gray-400 rounded-full">?</span>
+      </TooltipTrigger>
+      <TooltipContent className="bg-gray-800 text-gray-200 text-sm font-normal px-3 py-1 rounded-md shadow-lg">
+        Personalities are often influenced by a neighboring type, creating sub-types.
+      </TooltipContent>
+    </Tooltip>        
+  </h2>
 
-        <div className="grid grid-cols-2 gap-6 mb-8">
-          <motion.div
-            initial={{ x: -20, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.3 }}
-            className="bg-card rounded-lg p-6"
-          >
-            <h2 className="text-2xl font-semibold mb-4">Key Traits</h2>
-            <ul className="list-disc list-inside space-y-2">
-              {type.traits.map((trait) => (
-                <li key={trait}>{trait}</li>
-              ))}
-            </ul>
-          </motion.div>
+  {type.wings && Object.keys(type.wings).length > 0 ? (
+    <div className="space-y-4">
+      {Object.entries(type.wings).map(([wingKey, wing]) => (
+        <div 
+          key={wingKey}
+          className={`block p-4 rounded-lg ${
+            isWing && wingKey === wingKey 
+              ? "bg-accent text-accent-foreground" 
+              : "bg-secondary hover:bg-gray-600"
+          }`}
+        >
+          <h3 className="text-xl font-semibold mb-2">{wing.name}</h3>
+          <p className="text-sm text-muted-foreground">{wing.description}</p>
+        </div>
+      ))}
+    </div>
+  ) : (
+    <p className="text-sm text-gray-400">This type has no wings.</p>
+  )}
+</motion.div>
 
           <motion.div
             initial={{ x: 20, opacity: 0 }}
