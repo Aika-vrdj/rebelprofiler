@@ -466,7 +466,7 @@ const typeData: { [key: number]: TypeData } = {
   }
 };
 
-export default function TypeDetail({ typeNumber}: TypeDetailProps) {
+export default function TypeDetail({ typeNumber }: TypeDetailProps) {
   const typeData = typeData || {};  // ✅ Prevents "undefined" errors
   const type = typeData[typeNumber as keyof typeof typeData];
 
@@ -482,8 +482,8 @@ export default function TypeDetail({ typeNumber}: TypeDetailProps) {
           Back to Overview
         </Link>
       </motion.div>
-    </div>
-  
+
+      {/* Wings Section */}
       <motion.div
         initial={{ x: 20, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -503,10 +503,7 @@ export default function TypeDetail({ typeNumber}: TypeDetailProps) {
         </h2>
         <div className="space-y-4">
           {Object.entries(type.wings).map(([wingKey, wing]) => (
-            <div 
-              key={wingKey} 
-              className="block p-4 rounded-lg bg-secondary hover:bg-gray-600"
-            >
+            <div key={wingKey} className="block p-4 rounded-lg bg-secondary hover:bg-gray-600">
               <h3 className="text-xl font-semibold mb-2">{wing.name}</h3>
               <p className="text-sm text-muted-foreground">{wing.description}</p>
               <div className="mt-2">
@@ -523,62 +520,61 @@ export default function TypeDetail({ typeNumber}: TypeDetailProps) {
           ))}
         </div>
       </motion.div>
-    </div>
-        {/* Instinctual Subtypes Section */}
-        <motion.div
-          initial={{ x: -20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.8 }}
-          className="bg-card rounded-lg p-6 col-span-2"
-        >
-          <h2 className="text-2xl font-semibold mb-4 flex items-center">
-            Instinctual Subtypes
-            <Tooltip>
-              <TooltipTrigger className="ml-2 text-gray-400 text-sm cursor-pointer leading-none">
-                <span className="inline-block px-1 py-0.5 border border-gray-400 rounded-full">?</span>
-              </TooltipTrigger>
-              <TooltipContent className="bg-gray-800 text-gray-200 text-sm font-normal px-3 py-1 rounded-md shadow-lg">
-                The three instinctual subtypes shape how a person directs their energy in life.
-              </TooltipContent>
-            </Tooltip>
-          </h2>
-          <div className="grid grid-cols-3 gap-4">
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Self-Preservation</h3>
-              <p>{type.subtypes.selfPreservation}</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Sexual</h3>
-              <p>{type.subtypes.sexual}</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Social</h3>
-              <p>{type.subtypes.social}</p>
-            </div>
-          </div>
-        </motion.div>
 
-        {/* Core Beliefs & Patterns */}
-        <motion.div
-          initial={{ x: -20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.9 }}
-          className="bg-card rounded-lg p-6 col-span-2"
-        >
-          <h2 className="text-2xl font-semibold mb-4">Core Beliefs & Patterns</h2>
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Core Belief</h3>
-              <p className="text-lg">{type.coreBelief}</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Common Lie</h3>
-              <p className="text-lg">{type.commonLie}</p>
-            </div>
+      {/* Instinctual Subtypes Section */}
+      <motion.div
+        initial={{ x: -20, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ delay: 0.8 }}
+        className="bg-card rounded-lg p-6 col-span-2"
+      >
+        <h2 className="text-2xl font-semibold mb-4 flex items-center">
+          Instinctual Subtypes
+          <Tooltip>
+            <TooltipTrigger className="ml-2 text-gray-400 text-sm cursor-pointer leading-none">
+              <span className="inline-block px-1 py-0.5 border border-gray-400 rounded-full">?</span>
+            </TooltipTrigger>
+            <TooltipContent className="bg-gray-800 text-gray-200 text-sm font-normal px-3 py-1 rounded-md shadow-lg">
+              The three instinctual subtypes shape how a person directs their energy in life.
+            </TooltipContent>
+          </Tooltip>
+        </h2>
+        <div className="grid grid-cols-3 gap-4">
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Self-Preservation</h3>
+            <p>{type.subtypes.selfPreservation}</p>
           </div>
-        </motion.div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Sexual</h3>
+            <p>{type.subtypes.sexual}</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Social</h3>
+            <p>{type.subtypes.social}</p>
+          </div>
+        </div>
+      </motion.div>
 
-      </motion.div>  
-    </div>  
+      {/* Core Beliefs & Patterns */}
+      <motion.div
+        initial={{ x: -20, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ delay: 0.9 }}
+        className="bg-card rounded-lg p-6 col-span-2"
+      >
+        <h2 className="text-2xl font-semibold mb-4">Core Beliefs & Patterns</h2>
+        <div className="space-y-4">
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Core Belief</h3>
+            <p className="text-lg">{type.coreBelief}</p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Common Lie</h3>
+            <p className="text-lg">{type.commonLie}</p>
+          </div>
+        </div>
+      </motion.div>
+    </div>  {/* Closing the main container div */}
   );
 }
+
