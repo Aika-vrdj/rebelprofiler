@@ -7,6 +7,8 @@ import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip
 
 interface TypeDetailProps {
   typeNumber: number;
+  isWing?: boolean;
+  wingKey?: string;
 }
 
 interface WingData {
@@ -466,7 +468,7 @@ const typeData: { [key: number]: TypeData } = {
   }
 };
 
-export default function TypeDetail({ typeNumber }: TypeDetailProps) {
+export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailProps) {
   const typeData = typeData || {};  // ✅ Prevents "undefined" errors
   const type = typeData[typeNumber as keyof typeof typeData];
 
