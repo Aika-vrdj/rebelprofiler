@@ -481,6 +481,8 @@ export default function TypeDetail({ typeNumber}: TypeDetailProps) {
           <ArrowLeft className="mr-2 h-5 w-5" />
           Back to Overview
         </Link>
+      </motion.div>
+    </div>
 
         {/* Wings Section */}
       <motion.div
