@@ -469,6 +469,7 @@ const typeData: { [key: number]: TypeData } = {
 };
 
 export default function TypeDetail({ typeNumber, isWing, wingKey }: TypeDetailProps) {
+  const typeData = typeData || {};  // ✅ Prevents "undefined" errors
   const type = typeData[typeNumber as keyof typeof typeData];
 
   return (
