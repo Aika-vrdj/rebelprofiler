@@ -43,7 +43,7 @@ export default function RootLayout({
                 <p>
                   <Link
                     href="https://aikavrdj.com"
-                    className="text-sm text-blue-400 hover:underline"
+                    className="text-sm text-red-400 hover:underline"
                   >
                     Learn more at AikaVRDJ.com
                   </Link>
@@ -51,7 +51,7 @@ export default function RootLayout({
                 <p>
                   <Link
                     href="https://aikavrdj.com/products/beat-the-system"
-                    className="text-sm text-blue-400 hover:underline"
+                    className="text-sm text-red-400 hover:underline"
                   >
                     Beat the System Book
                   </Link>
