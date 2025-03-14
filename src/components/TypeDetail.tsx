@@ -522,7 +522,7 @@ export default function TypeDetail({ typeNumber}: TypeDetailProps) {
           ))}
         </div>
       </motion.div>
-    </div
+    </div>
         {/* Instinctual Subtypes Section */}
         <motion.div
           initial={{ x: -20, opacity: 0 }}
